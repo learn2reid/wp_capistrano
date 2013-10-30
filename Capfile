@@ -63,6 +63,8 @@ EOF
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/w3tc #{release_path}/#{app_root}/wp-content/w3tc"
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/avatars #{release_path}/#{app_root}/wp-content/avatars"
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/cache #{release_path}/#{app_root}/wp-content/cache"
+
+      # IF YOU WANT .HTACCESS FILES PUSHED --> ADD HERE
     end
   end
 
