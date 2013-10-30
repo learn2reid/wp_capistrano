@@ -64,7 +64,10 @@ EOF
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/avatars #{release_path}/#{app_root}/wp-content/avatars"
       run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/files/cache #{release_path}/#{app_root}/wp-content/cache"
 
-      # IF YOU WANT .HTACCESS FILES PUSHED --> ADD HERE
+      # IF YOU WANT .HTACCESS FILES PUSHED --> ADD HERE. ---- THIS WILL LINK .htpasswd
+      # run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/.htpasswd #{release_path}/#{app_root}/.htpasswd"
+      # run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/.htaccess #{release_path}/#{app_root}/.htaccess"
+      # run "ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/lo-check.php #{release_path}/#{app_root}/lo-check.php"
     end
   end
 
