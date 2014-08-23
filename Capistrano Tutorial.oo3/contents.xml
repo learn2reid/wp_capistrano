@@ -1,0 +1,3604 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE outline PUBLIC "-//omnigroup.com//DTD OUTLINE 3.0//EN" "http://www.omnigroup.com/namespace/OmniOutliner/xmloutline-v3.dtd">
+<outline xmlns="http://www.omnigroup.com/namespace/OmniOutliner/v3">
+  <style-attribute-registry>
+    <style-attribute version="0" key="font-family" group="font" name="family" class="string">Helvetica</style-attribute>
+    <style-attribute version="1" key="font-fill" group="font" name="fill color" class="color">
+      <color w="0"/>
+    </style-attribute>
+    <style-attribute version="0" key="font-fixed-pitch" group="font" name="fixed pitch" class="bool">no</style-attribute>
+    <style-attribute version="0" key="font-italic" group="font" name="italic" class="bool">no</style-attribute>
+    <style-attribute version="0" key="font-size" group="font" name="size" class="number">12</style-attribute>
+    <style-attribute version="0" key="font-weight" group="font" name="weight" class="number">5</style-attribute>
+    <style-attribute version="0" key="item-handle-mode(com.omnigroup.OmniOutliner)" group="row" name="draw handles" class="enum">
+      <enum-name-table default-value="0">
+        <enum-name-table-element value="0" name="always"/>
+        <enum-name-table-element value="1" name="never"/>
+        <enum-name-table-element value="2" name="hover"/>
+      </enum-name-table>
+    </style-attribute>
+    <style-attribute version="0" key="item-post-gap(com.omnigroup.OmniOutliner)" group="row" name="post gap" class="number">0</style-attribute>
+    <style-attribute version="0" key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)" group="row" name="above children padding" class="string">0</style-attribute>
+    <style-attribute version="0" key="item-pre-children-gap(com.omnigroup.OmniOutliner)" group="row" name="pre-children gap" class="number">0</style-attribute>
+    <style-attribute version="0" key="item-pre-gap(com.omnigroup.OmniOutliner)" group="row" name="pre gap" class="number">1</style-attribute>
+    <style-attribute version="0" key="item-row-padding(com.omnigroup.OmniOutliner)" group="row" name="row padding" class="string">4</style-attribute>
+    <style-attribute version="0" key="item-to-note-space(com.omnigroup.OmniOutliner)" group="row" name="note gap" class="number">0</style-attribute>
+    <style-attribute version="0" key="paragraph-alignment" group="paragraph" name="alignment" class="enum">
+      <enum-name-table default-value="4">
+        <enum-name-table-element value="0" name="left"/>
+        <enum-name-table-element value="1" name="right"/>
+        <enum-name-table-element value="2" name="center"/>
+        <enum-name-table-element value="3" name="justified"/>
+        <enum-name-table-element value="4" name="natural"/>
+      </enum-name-table>
+    </style-attribute>
+    <style-attribute version="0" key="paragraph-base-writing-direction" group="paragraph" name="writing direction" class="enum">
+      <enum-name-table default-value="0">
+        <enum-name-table-element value="0" name="left-to-right"/>
+        <enum-name-table-element value="1" name="right-to-left"/>
+      </enum-name-table>
+    </style-attribute>
+    <style-attribute version="0" key="text-background-color" group="text" name="background color" class="color">
+      <color w="0" a="0"/>
+    </style-attribute>
+  </style-attribute-registry>
+  <named-styles>
+    <named-style id="n_Pe4j-wTmH" name="Heading 1" display-order="0">
+      <style>
+        <value key="font-family">Avenir Next</value>
+        <value key="font-fill">
+          <color r="1" g="0.8" b="0.4"/>
+        </value>
+        <value key="font-size">24</value>
+        <value key="text-background-color">
+          <color r="0" g="0.0969485" b="0.124007"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="jBtVNldF-aM" name="Heading 2" display-order="1">
+      <style>
+        <value key="font-fill">
+          <color r="1" g="0.501961" b="0"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="oNjvfB6_IzG" name="Highlight" display-order="2">
+      <style>
+        <value key="text-background-color">
+          <color r="0.026" g="0.2132" b="0.26"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="aeYpF7M08yK" name="Magenta" display-order="3">
+      <style>
+        <value key="font-fill">
+          <color r="0.825279" g="0.214757" b="0.514342"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="mGYnjVNQpwD" name="CODE" display-order="4">
+      <style>
+        <value key="font-family">Letter Gothic Std</value>
+        <value key="font-fill">
+          <color r="0" g="1" b="0"/>
+        </value>
+        <value key="font-fixed-pitch">yes</value>
+        <value key="font-size">20</value>
+        <value key="font-weight">6</value>
+        <value key="item-handle-mode(com.omnigroup.OmniOutliner)">hover</value>
+        <value key="item-post-gap(com.omnigroup.OmniOutliner)">6</value>
+        <value key="item-pre-gap(com.omnigroup.OmniOutliner)">6</value>
+        <value key="item-row-padding(com.omnigroup.OmniOutliner)">6</value>
+        <value key="text-background-color">
+          <color r="0" g="0" b="0" a="0.85"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="pEuyXj84FqX" name="Emphasis" display-order="5">
+      <style>
+        <value key="font-fill">
+          <color r="1" g="1" b="0"/>
+        </value>
+        <value key="font-weight">9</value>
+      </style>
+    </named-style>
+    <named-style id="jmMHkfmYZ1M" name="Yellow" display-order="6">
+      <style>
+        <value key="font-fill">
+          <color r="0.560784" g="1" b="0.345098"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="a0st9oz2FO1" name="Orange" display-order="7">
+      <style>
+        <value key="font-fill">
+          <color r="0.802974" g="0.302721" b="0.0883271"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="n7Lfd4MM7uE" name="Red" display-order="8">
+      <style>
+        <value key="font-fill">
+          <color r="0.855019" g="0.196205" b="0.181175"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="fyki-wDjq0-" name="Violet" display-order="9">
+      <style>
+        <inherited-style name="Red" idref="n7Lfd4MM7uE"/>
+        <value key="font-fill">
+          <color r="0.422548" g="0.440798" b="0.773234"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="hAkuUjwYLH4" name="Blue" display-order="10">
+      <style>
+        <value key="font-fill">
+          <color r="0.149652" g="0.544306" b="0.821561"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="eF5w5ahSfcU" name="Cyan" display-order="11">
+      <style>
+        <value key="font-fill">
+          <color r="0.166803" g="0.63197" b="0.595656"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="kH8JuFLRG40" name="Green" display-order="12">
+      <style>
+        <value key="font-fill">
+          <color r="0.519396" g="0.60223" b="0"/>
+        </value>
+      </style>
+    </named-style>
+    <named-style id="laBWcNx2SF3" name="CODE" display-order="13">
+      <style/>
+    </named-style>
+  </named-styles>
+  <settings>
+    <base-style>
+      <style>
+        <value key="font-family">Avenir Next</value>
+        <value key="font-fill">
+          <color r="0.858779" g="0.982635" b="0.994374"/>
+        </value>
+        <value key="font-size">18</value>
+        <value key="item-post-gap(com.omnigroup.OmniOutliner)">2</value>
+        <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">1</value>
+        <value key="item-pre-children-gap(com.omnigroup.OmniOutliner)">1</value>
+        <value key="item-pre-gap(com.omnigroup.OmniOutliner)">2</value>
+        <value key="item-row-padding(com.omnigroup.OmniOutliner)">2</value>
+        <value key="item-to-note-space(com.omnigroup.OmniOutliner)">1</value>
+        <value key="text-background-color">
+          <color r="0.00991633" g="0.047667" b="0.0909953"/>
+        </value>
+      </style>
+    </base-style>
+    <page-adornment>
+      <first-page-headers is-active="yes">
+        <header location="center">
+          <text>
+            <p>
+              <run>
+                <style>
+                  <value key="font-weight">9</value>
+                </style>
+                <lit><cell variable="OOSectionTitleVariableIdentifier"/></lit>
+              </run>
+            </p>
+          </text>
+        </header>
+      </first-page-headers>
+    </page-adornment>
+    <print-info>
+      <print-info-key name="OOScaleDocumentToFitPageWidth" type="boolean">true</print-info-key>
+    </print-info>
+    <auto-generate-level-styles>no</auto-generate-level-styles>
+  </settings>
+  <editor content-size="{1250, 852}" outline-title-display-mode="when-editing" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" inline-notes-span="full">
+    <drawer display="sections" palette-expanded="no" palette-height="501"/>
+    <hoisted-rows ids="nckXSFefptm"/>
+    <toolbar>{
+    &quot;TB Default Item Identifiers&quot; =     (
+        ToggleSections,
+        SelectSection,
+        ActionButton,
+        AddColumn,
+        Attach,
+        ToggleRecording,
+        NSToolbarFlexibleSpaceItem,
+        ShowInfo
+    );
+    &quot;TB Display Mode&quot; = 2;
+    &quot;TB Icon Size Mode&quot; = 1;
+    &quot;TB Is Shown&quot; = 1;
+    &quot;TB Item Identifiers&quot; =     (
+        NSToolbarFlexibleSpaceItem,
+        ToggleSections,
+        SelectSection,
+        ActionButton,
+        MoveUp,
+        MoveDown,
+        Group,
+        Ungroup,
+        ExpandAll,
+        CollapseAll,
+        ShowInfo,
+        AddItem,
+        AddChild,
+        AddAunt,
+        AddColumn,
+        NSToolbarShowFontsItem,
+        NSToolbarShowColorsItem,
+        Attach,
+        ToggleShowRowStates,
+        ToggleRecording,
+        NSToolbarFlexibleSpaceItem
+    );
+    &quot;TB Size Mode&quot; = 1;
+}</toolbar>
+  </editor>
+  <outline-title>
+    <text>
+      <p>
+        <run>
+          <style>
+            <value key="font-weight">9</value>
+            <value key="paragraph-alignment">center</value>
+          </style>
+          <lit>CAPISTRANO DOCUMENTATION</lit>
+        </run>
+      </p>
+    </text>
+  </outline-title>
+  <columns>
+    <column id="dTpN3JwYpBn" type="text" width="18" minimum-width="18" maximum-width="18" text-export-width="1" is-note-column="yes">
+      <style>
+        <value key="font-fill">
+          <color r="0.745487" g="0.94046" b="1"/>
+        </value>
+      </style>
+      <title>
+        <text>
+          <p/>
+        </text>
+      </title>
+    </column>
+    <column id="jFqHUGd_Dg1" type="text" width="1229" minimum-width="13" maximum-width="1000000" text-export-width="72" is-outline-column="yes">
+      <title>
+        <text>
+          <p>
+            <run>
+              <lit>Topic</lit>
+            </run>
+          </p>
+        </text>
+      </title>
+    </column>
+  </columns>
+  <root>
+    <style>
+      <value key="paragraph-base-writing-direction">left-to-right</value>
+    </style>
+    <style>
+      <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+      <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      <value key="font-fill">
+        <color r="0.8" g="0.4" b="1"/>
+      </value>
+      <value key="paragraph-base-writing-direction">left-to-right</value>
+    </style>
+    <style>
+      <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      <value key="font-fill">
+        <color r="0.270588" g="0.756863" b="0.917647"/>
+      </value>
+      <value key="font-size">20</value>
+      <value key="paragraph-base-writing-direction">left-to-right</value>
+    </style>
+    <style>
+      <value key="paragraph-base-writing-direction">left-to-right</value>
+    </style>
+    <style>
+      <value key="font-fill">
+        <color r="0.55321" g="0.671863" b="0.686802"/>
+      </value>
+      <value key="font-italic">yes</value>
+      <value key="paragraph-base-writing-direction">left-to-right</value>
+    </style>
+    <item id="m8QATIsxi33" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+        <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Preliminary Notes</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="dsQvdoW6LFY" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>SERVER</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="bs8SnWrzvjm" expanded="yes">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>All sites on server will live in folder &quot;~/sites&quot;</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="k83AEbaxdgm">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>ex) ~/sites/lustfulhealth-dev</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+                <item id="lTkfo7D03-X">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>Once capistrano = in place, these files will be symlinked.</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="p-3UQntt4zj" expanded="yes">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>~ = / {home} / {username}</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="aKEtvjKPyJw">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>ex) /home3/lustful1</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+                <item id="iSOAs0ySFZp">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>/home1/thelocia</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="iJSce3DlzBB">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Cap -T shows all capistrano commands</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="lNp-EIXQ-7Q">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>process = same for prod, staging and dev</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="cpq_aCkavBe">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>SETUP SSH-KEYS ACCESS</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="fVerLfRdR-g">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>1) Subdomain &amp; Database</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="nWyca7v7FnV">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>If creating a site for staging, such as dev.example.com, first you must create the subdomain using cPanel or whatever is provided by hosting service</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="bFl9_55-6DS" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>For BlueHost:</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="oaLkDCHN9Yn" expanded="yes">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Go to domains and create a new subdomain and have the path be ~/public_html/{subdomain}</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="mhLhIVMPg8r">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>ex) dev.lustfulhealth.com == ~/public_html/dev</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="o7E1Uj1GYhm">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Create database using cPanel for subdomain</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="apVj0l7NTet" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>2) Clone WP-Capistrano</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="mux8-7gHYg5" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Fork / Clone WP-Capistrano Repo</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="kDt-WV2flDn">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>$ git clone </lit>
+                    </run>
+                    <run>
+                      <lit><cell href="mailto:git@github.com" name="git@github.com" type="link"/></lit>
+                    </run>
+                    <run>
+                      <lit>:learn2reid/wp_capistrano.git</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="m7n7-wpwC6X">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>$ git clone </lit>
+                    </run>
+                    <run>
+                      <lit><cell href="mailto:git@github.com" name="git@github.com" type="link"/></lit>
+                    </run>
+                    <run>
+                      <lit>:Kronda/wp_capistrano.git</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="k8cplKKDa9o" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Should now have:</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="m_Fkr5eGZe8">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>.git, .gitattributes, .git</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="evwpNktpOvj">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Cap File</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="i6XRgwhkOK3">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Readme</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="lh0RRQ7SA4q" expanded="yes">
+              <style>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Config Folder</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="o6MFqpLCImD" expanded="yes">
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>Deploy folder</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                  <children>
+                    <item id="fysrmsW-1Eh">
+                      <values>
+                        <text>
+                          <p>
+                            <run>
+                              <lit>dev.rb</lit>
+                            </run>
+                          </p>
+                        </text>
+                      </values>
+                    </item>
+                    <item id="cYGtwLVxFKF">
+                      <values>
+                        <text>
+                          <p>
+                            <run>
+                              <lit>staging.rb</lit>
+                            </run>
+                          </p>
+                        </text>
+                      </values>
+                    </item>
+                    <item id="pFyUFGgIMVJ">
+                      <values>
+                        <text>
+                          <p>
+                            <run>
+                              <lit>prod.rb</lit>
+                            </run>
+                          </p>
+                        </text>
+                      </values>
+                    </item>
+                  </children>
+                </item>
+                <item id="czoAprUhF-3">
+                  <style>
+                    <value key="font-italic">no</value>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>deploy.rb</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="mD5pdlEfzKF">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
+                      <lit>Wordpress Folder</lit>
+                    </run>
+                    <run>
+                      <lit> // Where all actual wordpress files are</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="lWHHt5n-L3D">
+              <style>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Webroot Folder</lit>
+                    </run>
+                    <run>
+                      <style>
+                        <value key="font-weight">5</value>
+                      </style>
+                      <lit> // Symbolically Linked Folder --all projects live in a folder called webroot</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="nZ9m5Pve3H9" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>3) Link to Personal GitHub &amp; remove other remotes</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="eGcH3Y5GZEh" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>On github (or your version of SVN), make a new Repo</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="o5zUjt7kFmJ" expanded="yes">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>should be called your hostname</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="gVd1LTS70XX">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>ex) lustfulhealth, wordcamp, locialnetwork</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+          </children>
+        </item>
+        <item id="kNbvs-QFoTs" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Grab the ssh code from GitHub</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="ibsYCciSD3S">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Copy SSH button</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="aI9x3AYDH5c" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Remove other Remotes</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>Note: to show removes do : </lit>
+                </run>
+                <run>
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                  </style>
+                  <lit>git remote -v</lit>
+                </run>
+              </p>
+            </text>
+          </note>
+          <children>
+            <item id="fotCDJG5Bfu">
+              <style>
+                <value key="item-post-gap(com.omnigroup.OmniOutliner)">1</value>
+                <value key="item-row-padding(com.omnigroup.OmniOutliner)">1</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <style>
+                        <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                      </style>
+                      <lit>git remote rm origin</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="iiBynGq6Nup" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Add new remote from GitHub</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="gi-k81M5ulk">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>git remote add origin git@github… {COPIED SSH CODE}</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="iAzh2arkuke">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>git remote add origin </lit>
+                    </run>
+                    <run>
+                      <lit><cell href="ssh://git@bitbucket.org/Learn2reid/d2office.git" name="ssh://git@bitbucket.org/Learn2reid/d2office.git" type="link"/></lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="hkzt7UrPZ-z" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>4) Local-config.php</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="fUcicMJAlYA" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Create &quot;local-config.php&quot; -- Get Wordpress Installed Locally</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="hQtFXFXD5LO">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Open  Folder in Sublime Text</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="ln2zXOiGk-9" expanded="yes">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>NOTE: &quot;local-config.php&quot; holds all DB credentials</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="lPfoBgTv3Li">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>never put credentials in wp-config for security purposes</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="gcdSaMz9O2r" expanded="yes">
+              <style>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Create local-config.php in wordpress folder</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="cm4OiN7Wyih">
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                    <value key="font-italic">no</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>touch local-config.php</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+                <item id="ljwV4ofvSrf">
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                    <value key="font-italic">no</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>nano local-config.php</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+                <item id="k9jnhh31XqP">
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                    <value key="font-italic">no</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>vi local-config.php </lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+          </children>
+        </item>
+        <item id="ohKklZdd_9b">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Verify that local version works</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="b8AN9aDZHhj">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>dev.lustfulhealth.dev</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="mVWnxlGhQAO">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>should come up with 2013 wordpress theme</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="acIsMdJvFCZ">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>TODO:</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="n7ALoj0JS8N">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>ADD WP MULTI CONFIG INSTEAD FOR MULTISTAGING</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="frT4urxD6qn" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>5) Deploy.rb  #FixMe</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="fzVUBvF6kR6">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Set:Application, &apos;project_name&apos; = #{PROJECT_NAME}</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <note expanded="yes">
+            <text>
+              <p>
+                <run>
+                  <lit>NO UNDERSCORES OR DASHES OR SPACES</lit>
+                </run>
+              </p>
+            </text>
+          </note>
+        </item>
+        <item id="kP2xNW9szrL" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>set: repository</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="f7ZcYUkcyt_">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Leave at git</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="nixJi8SC68U" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>set: app_root, &quot;webroot&quot;</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="kTT3PPMS164">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Path to wp within repo</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="lOUYPF4Gs9I">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>set: local_path, &quot;/home3/lustful1/sites/{app_root}</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="jxOMxIWeplz" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>set: ssh_user, &quot;{name youd use to log in server&quot;</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="mDdTtsTzn3k">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>ex) thelocia, lustful1</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="pHx-6hq5wdk">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>set: stage, &quot;{leave at dev for most used stage}&quot;</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="hIrAYH_gfhK" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>set: local_domain, &quot;dev.locialnetwork.com&quot;</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="kRyDGMgMqlx">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>DO NOT ADD </lit>
+                    </run>
+                    <run>
+                      <lit><cell href="HTTP:///" name="HTTP://" type="link"/></lit>
+                    </run>
+                    <run>
+                      <lit> OR SLASH AFTER</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="ji5rty1BovL">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>6) Dev.rb      #FixMe</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="eyCPhXCBMEs">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Go into main deploy stage -- dev.rb</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="nDX9W9WbT0B">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>IMPORTANT: ADD set: local_domain, &apos;dev.site.dev&apos; or &apos;staging.site.dev&apos; for each site</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="pMxfa3i662h">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Server: All sites live in:</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="kTedWpZX2-S" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>/{home}/{username}/sites/#{application}-#{stage}</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="ibgg1PsrBqs">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>ex) /home3/lustful1/sites/lustfulhealth-dev</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="jJprsYcRfqv">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <null/>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="lSw7MTM5txL" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>WP-CLI settings for any stage.rb file</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="hdV9Bd_Sniu">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>set :wp, &quot;cd #{current_path}/#{app_root} ; /home3/lustful1/.wp-cli/bin/wp&quot; </lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="kdDhJdpoMhR">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit># The path to wp-cli</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="aVaRUdtjogx">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>#(Should be the full path to the wp command on your server)</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="m3IsGaybnWJ" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>7) Commit &amp;  Branch</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="cwHq1LfFqWU" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>COMMIT</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="mnZVD_OxSvD">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>git add .</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="dE9AJW2wqCW">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>git commit -m &quot;Updated Config FIles &quot;</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="itkX5R3n5r-">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>git push origin master</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="k_LMU3cjbiu">
+              <values>
+                <null/>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="mXGczijQgZz" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>BRANCHING: </lit>
+                </run>
+                <run>
+                  <style>
+                    <value key="font-weight">5</value>
+                  </style>
+                  <lit>Branches should match stages</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="lA5KUOvLbQv">
+              <style>
+                <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Development =&gt; dev   ----  Staging =&gt; staging</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="h3JJy8cSlWt" expanded="yes">
+              <style>
+                <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Make new dev branch &amp; switch to it</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="lM1k5UayLVs">
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                    <value key="font-italic">no</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>git checkout -b dev</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="odRVnFXqJG-" expanded="yes">
+              <style>
+                <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Push dev branch up to Github</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="fv6Jbo5a-25">
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                    <value key="font-italic">no</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>git push -u origin dev</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+          </children>
+        </item>
+        <item id="ojQEZNlSxTB" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>different stages for each stage of development</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="j5pJPYkSoli">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Git naturally creates master brnace</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="oNwYjcV29u-">
+              <style>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>develop</lit>
+                    </run>
+                    <run>
+                      <style>
+                        <value key="font-weight">5</value>
+                      </style>
+                      <lit> in the </lit>
+                    </run>
+                    <run>
+                      <lit>development</lit>
+                    </run>
+                    <run>
+                      <style>
+                        <value key="font-weight">5</value>
+                      </style>
+                      <lit> branch</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="iDEphkSb9LO">
+              <style>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>then merge to staging or prod</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="jla4S38azUm">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Can delete Master brance &amp; jstu pull form stage-specific branches</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="j6ve4uX_MbO">
+              <values>
+                <null/>
+              </values>
+            </item>
+            <item id="aFlU6OUBwMg">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>role:web, &quot;kronda.com&quot;</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="d3c-HYpHnZq">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>role:db, &quot;kronda.com&quot;    // usually same as web server</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="odW4voRuok7">
+              <values>
+                <null/>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="e-eAwC5BuCn" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>8) Github &amp; SSH-Keys</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="ifNd00HV4SN">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Add to SSH-Keys Screen</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="elFklu05tQY">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Follow ssh-keys tutorial</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="nEY21zggzxe" expanded="yes">
+          <style>
+            <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>add to config file!!!!!!!!!! SUPER IMPORTANT (esp if you get error: permession denied (publickey)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="dwzslM0240V">
+              <style>
+                <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">0</value>
+                <value key="item-row-padding(com.omnigroup.OmniOutliner)">4</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Host tykaconcepts.com</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>	</lit>
+                    </run>
+                    <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
+                      <lit>ForwardAgent yes</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="g7wEUbvLUJI" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>9) Deploy:Check</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="gluzadaXcEK" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>cap dev deploy:check</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="lCCTOkw7DEa">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Dependencies will fail @ first b/c folders ≠ exist yet</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="abaAx1U0c4F" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>10) Deploy:Setup</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="laJ1Y7nNgUU" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>cap dev deploy:setup</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="k3kARDqKxGD">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>run cap check again after just in case</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="fvxfTdT7bxr">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>ignore change group error apache</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="pVRQpjBQYPy" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>11) Deploy</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="aPJ-1VpC1zP">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>If all is good to go, deploy!</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="mpiSWURypHT" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>$ cap dev deploy</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="oCcSsMK_fS2" expanded="yes">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Look for {project_name}-dev</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="c7WmLMVVTTM">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <style>
+                            <value key="font-weight">9</value>
+                          </style>
+                          <lit>current</lit>
+                        </run>
+                        <run>
+                          <lit>       // always points to latest release of site</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+                <item id="aXV4S5ZwYug">
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>releases    </lit>
+                        </run>
+                        <run>
+                          <style>
+                            <value key="font-weight">5</value>
+                          </style>
+                          <lit>// History of releases</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+                <item id="p9nAdaLX10A" expanded="yes">
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>shared</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                  <children>
+                    <item id="m5-nD1Y2Cju">
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
+                      <values>
+                        <text>
+                          <p>
+                            <run>
+                              <lit>cached-copy</lit>
+                            </run>
+                          </p>
+                        </text>
+                      </values>
+                    </item>
+                    <item id="fm4WyIqSEzj" expanded="yes">
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
+                      <values>
+                        <text>
+                          <p>
+                            <run>
+                              <lit>default</lit>
+                            </run>
+                          </p>
+                        </text>
+                      </values>
+                      <children>
+                        <item id="oTE-ANEkX0Z">
+                          <style>
+                            <value key="font-weight">9</value>
+                          </style>
+                          <values>
+                            <text>
+                              <p>
+                                <run>
+                                  <style>
+                                    <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+                                  </style>
+                                  <lit>WHERE LOCAL-CONFIG.php exists for SERVER VERSION</lit>
+                                </run>
+                              </p>
+                            </text>
+                          </values>
+                        </item>
+                      </children>
+                    </item>
+                  </children>
+                </item>
+              </children>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="gocgozOzWn4" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>12) Server local-config</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="mlc2a8pXwvx" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>On LOCAL machine</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="cCihemYvdnj">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>cap dev deploy:create_settings_php</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="kSSvnQ_uPtd">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Puts local-config.php in shared/default folder on server</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="p6XDHlvyO_J" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Open local-config on server and fill in server DB details for that stage.</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="cb_QC3VDfQk">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>sftp://lustfulhealth.com//home3/lustful1/sites/lustfulhealth-staging/shared/default/local-config.php</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="glq0yDiNzik" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>13) Add/Import DB into Server</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="nPGTA866OCa">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Manually the first time</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="eutvNqYV46W" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Get sql dump from local version</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="dmTY0ALF6DY">
+              <style>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>sequel / phpMyAdmin / Navicat / WP Migrate Pro Plugin</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="gf6qwAboXyI">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>DO SEARCH &amp; REPLACE FOR URLS &amp; PATH</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="jZ5lLNC3Qgr">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Import to Server DB --&gt; phpMyAdmin</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="flyuT6KX95W" expanded="yes">
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>14) Push all local content ≠ in repo upto server</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="d9ugWBa3R5i" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>To push all local content not in repo up to server</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="n9sMfhkLHYz">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>cap dev files:push      // in ~/Sites/{project}/wordpress</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="jwZvX98MoAS">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>DOESNT PUSH PLUGINS OR THEMES</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="nckXSFefptm" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>15) Symlink - Server Config (Delete original Subdomain &amp; Symlink)</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="iOnEJAbu4bA">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>ON SERVER SIDE:</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="dQmy4FOQqtn">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>cd ~/sites/current/wordpress &amp;&amp; pwd</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="pnlijPdAv6Z">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>copy path</lit>
+                </run>
+                <run>
+                  <style>
+                    <value key="font-weight">5</value>
+                  </style>
+                  <lit> and go back to public_html</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="frmgBRgVv6Y" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>ll | grep project_name</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="nvFszmNOwS4">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>ex) ll | grep wordcamp</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="bvIzwW6_HL0" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>DELETE Orginal SUBDomain in ~/public_html</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="g85kkbWa7wk" expanded="yes">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>rm -rf yourFolderName/</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="cktzhzzhv-l">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>ex) rm -rf wordcamp.karveldigital.com/</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+          </children>
+        </item>
+        <item id="dmqDlK0hIpP" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Symlink subdomain to sites/project folder</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="mi29YpBBtVe">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>ln -s /{home}/{username}/sites/{project}-{stage}/current/wordpress SPACE /{home}/{username}/public_html/{subdomain}</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="pubAJ64Fb1S">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>ex) ln -s /home3/lustful1/sites/lustfulhealth-dev/current/wordpress /home3/lustful1/lustful1/public_html/dev</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="kzntOQAdy71">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>ll to show that it&apos;s symlinked</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="bJvIb7pwoAy">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <null/>
+          </values>
+        </item>
+        <item id="dt5dZwaiVck">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>SITE SHOULD BE LIVE AND WORKING AT THIS POINT</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="hgVqZnMZ9jA" expanded="yes" children-are-sections="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+        <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>DATABASE CONFIG</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <note expanded="yes">
+        <text>
+          <p>
+            <run>
+              <lit>First Time</lit>
+            </run>
+          </p>
+        </text>
+      </note>
+      <children>
+        <item id="iL-oTg-SLeP">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>a) Create DB folder in Root</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="oo-6TqyJgHf">
+              <values>
+                <null/>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="hQjXUM_z0V0">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>b) #FixMe Search in CapFile </lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="hafT-apHBnu">
+              <values>
+                <null/>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="b2joW13xMcH">
+          <style>
+            <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>c) Export DB using WP-CLI</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="dWJIXoNw6Uk">
+              <style>
+                <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>cd ~/Sites/{project}/wordpress</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="mXeCN94P6lV" expanded="yes">
+              <style>
+                <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>wp db export ../db/default_dev.sql</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="aiLOZ0_PFek">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>LOCAL: check in ~/Sites/wordcamp/db to see if it worked, default_dev.sql should exist</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="ni2hfKtCJTw">
+              <style>
+                <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>wp db export #{filename} --url=#{stage}.lustfulhealth.dev</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="kOjBVf-zN2h">
+              <style>
+                <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>sed -e &apos;s/dev.lustfulhealth.com/staging.lustfulhealth.dev/g&apos; -i .bak default_dev.sql</lit>
+                    </run>
+                  </p>
+                  <p/>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="ngyYgId9Oac">
+          <style>
+            <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>d) Push Local DB upto Dev Server</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="b63OGb4_1tj">
+              <style>
+                <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>cap dev db:push</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="cchqGyMQHpX">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>e) PULL DB DOWN - db:down &amp; db:pull</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="a6B4T1aQnYl">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>2 options: db:down or db:pull</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="mB4cl8dgm8l" expanded="yes">
+              <style>
+                <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+                <value key="font-fill">
+                  <color r="0.270588" g="0.756863" b="0.917647"/>
+                </value>
+                <value key="font-size">20</value>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>db:down:</lit>
+                    </run>
+                    <run>
+                      <style>
+                        <value key="font-weight">5</value>
+                      </style>
+                      <lit> pulls down backup and places it in db folder</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="ezi9IWfKdMv">
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>cap dev db:down</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="iytPfWlln8k" expanded="yes">
+              <style>
+                <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+                <value key="font-fill">
+                  <color r="0.270588" g="0.756863" b="0.917647"/>
+                </value>
+                <value key="font-size">20</value>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>db:pull:</lit>
+                    </run>
+                    <run>
+                      <style>
+                        <value key="font-weight">5</value>
+                      </style>
+                      <lit> pulls down db and replaces local copy with what you pulled      /// I EDITED THIS ONE</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="bTrWhJv-qJJ">
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>cap dev db:pull</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="pJX16P7jipy">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>both do search and replaces</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="lUhWFzs_dka">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+        <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
+        <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Typical Deploy Process</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <note>
+        <text>
+          <p>
+            <run>
+              <lit>≠ First Time</lit>
+            </run>
+          </p>
+        </text>
+      </note>
+      <children>
+        <item id="p9afvUXTqsW" expanded="yes">
+          <style>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+            <value key="item-post-gap(com.omnigroup.OmniOutliner)">4</value>
+            <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">0</value>
+            <value key="item-pre-children-gap(com.omnigroup.OmniOutliner)">0</value>
+            <value key="item-pre-gap(com.omnigroup.OmniOutliner)">4</value>
+            <value key="item-row-padding(com.omnigroup.OmniOutliner)">4</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>1) Deploy</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="oaiAPmcq24D">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>cap {stage} deploy</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <note>
+                <text>
+                  <p>
+                    <run>
+                      <lit>cap {stage} deploy:check</lit>
+                    </run>
+                  </p>
+                </text>
+              </note>
+            </item>
+          </children>
+        </item>
+        <item id="eZkacNNQqjt" expanded="yes">
+          <style>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+            <value key="item-post-gap(com.omnigroup.OmniOutliner)">4</value>
+            <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">0</value>
+            <value key="item-pre-children-gap(com.omnigroup.OmniOutliner)">0</value>
+            <value key="item-pre-gap(com.omnigroup.OmniOutliner)">4</value>
+            <value key="item-row-padding(com.omnigroup.OmniOutliner)">4</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>2) DB: </lit>
+                </run>
+                <run>
+                  <style>
+                    <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+                    <value key="font-weight">5</value>
+                  </style>
+                  <lit>wped &amp; wpes -- db:push</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="dxWsCpo77se">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>(in wordpress folder)</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="d_d-NiTvNp1">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>wp db export ../db/default_{stage}.sql --url=dev.lustfulhealth.dev&apos;</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <note>
+                <text>
+                  <p>
+                    <run>
+                      <lit>must include --url=dev.lustfulhealth.dev&apos; if used local-config.php with case switches</lit>
+                    </run>
+                  </p>
+                </text>
+              </note>
+              <children>
+                <item id="kWu9V0blCG6">
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                    <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+                    <value key="font-italic">no</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>wped = &apos;wp db export ../db/default_dev.sql --url=dev.lustfulhealth.dev&apos;</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+                <item id="mZqksQLCHRN">
+                  <style>
+                    <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                    <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+                    <value key="font-italic">no</value>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>wpes = &apos;wp db export ../db/default_staging.sql --url=staging.lustfulhealth.dev&apos;</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="iXLjQZIAcA1">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>cap {stage} db:push</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="cO5izj6hNfF" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+            <value key="font-weight">9</value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>3) Files</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="gDVf13dqRaZ">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>cap {stage} files:push</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="l_9sVZ4IEOS" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+        <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>TROUBLESHOOTING</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="iRm2wCTanTJ" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Configure WP-CLI on Server</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="nO0bdmq4uno">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Path to WP-CLI in dev = /{home}/{username}/.wp-cli/bin/wp</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="aSC_epOFMrs">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>must run with PHP-CLI !!!</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="c43f0f1NuF6" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>GTID + mySQL Errors -- --set-gtid-purged=OFF</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="mdwmX4aArEc">
+              <style>
+                <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">0</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>FILE TO EDIT: (HOMBREW wp-cli) = </lit>
+                    </run>
+                    <run>
+                      <style>
+                        <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                      </style>
+                      <lit>/usr/local/Cellar/wp-cli/0.15.0/php/commands/db.php</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="hcTwRhTrpmc">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>mySQLdump = .wp-cli/vendor/wp-cli/wp-cli/php/commands/db.php</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="keVwAxhY94m">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>If have GTID error add: --set-gtid-purged=OFF  after mysqldump command</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="dZY6YMRQGE1">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Line 140:		$command = &apos;mysqldump --no-defaults --set-gtid-purged=OFF %s&apos;;</lit>
+                    </run>
+                  </p>
+                  <p/>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="dGtcOY3lCyS" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>GIT -- Commit Line ending errors</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="h8AflZAuT-y">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit> find  /core/sites/all/modules -type f -exec dos2unix {} +</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="n0gijYxSHba" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Cannot Parse Object</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="aKG08-StznQ">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Capistrano – Could not parse object ’77514601ab8705e36f26270098b2aa268d9a7899</lit>
+                    </run>
+                    <run>
+                      <lit>′</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>The easy solution is to go to the server to which you are attempting to deploy and delete the “cached-copy” directory under the “shared” directory.</lit>
+                    </run>
+                  </p>
+                  <p/>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="p1Lwp711vVZ" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>mysql socket hy002</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="ibbqlX5tXnN">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>sudo ln -s /Applications/MAMP/tmp/mysql/mysql.sock /tmp/mysql.sock</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="m2fTphhaqRQ" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <lit>CSS: HEADER MENUS MESSED UP</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="lyyAYC0Wnq8">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>Go to wp-admin --&gt; appearance --&gt; </lit>
+                    </run>
+                    <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
+                      <lit>RESELECT MENUS</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="mbJ-hceqP67">
+              <values>
+                <null/>
+              </values>
+            </item>
+          </children>
+        </item>
+      </children>
+    </item>
+    <item id="lt21GFlq6X6">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+        <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>• .htaccess &amp; .htpasswd</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="i2XFgRbAHFg" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <lit>1) SERVER:</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="enxZojFkVAe">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>create .htaccess and .htpasswd files in ~/sites/{project}-{stage}/shared</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="cZxRK60pTPY" expanded="yes">
+              <style>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>.htaccess in ~/sites/#{project-name}-dev/shared/.htaccess</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="pxq0c83LpRW">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit># Password Protect</lit>
+                        </run>
+                      </p>
+                      <p>
+                        <run>
+                          <lit>	AuthType Basic</lit>
+                        </run>
+                      </p>
+                      <p>
+                        <run>
+                          <lit>	AuthName &quot;Development Area: Locial Network Only&quot;</lit>
+                        </run>
+                      </p>
+                      <p>
+                        <run>
+                          <lit>	AuthUserFile /home3/lustful1/sites/lustfulhealth-dev/shared/default/.htpasswd</lit>
+                        </run>
+                      </p>
+                      <p>
+                        <run>
+                          <lit>	require valid-user</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+            <item id="kssX6xTUHC2" expanded="yes">
+              <style>
+                <value key="font-weight">9</value>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>.htpasswd ~/sites/#{project-name}-dev/shared/default/.htpasswd</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+              <children>
+                <item id="fUxoOSM5aHz">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>username:&lt;encrypted key from </lit>
+                        </run>
+                        <run>
+                          <lit><cell href="http://davidwalsh.name/web-development-tools" name="http://davidwalsh.name/web-development-tools" type="link"/></lit>
+                        </run>
+                        <run>
+                          <lit>&gt;</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+                <item id="ojz6GoP6hNj">
+                  <values>
+                    <text>
+                      <p>
+                        <run>
+                          <lit>lorelle:F09kytLPCipCE</lit>
+                        </run>
+                      </p>
+                    </text>
+                  </values>
+                </item>
+              </children>
+            </item>
+          </children>
+        </item>
+        <item id="dlZk15OnCME" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <lit>2) LOCAL CAPFILE (ADD TO CAPFILE in SYMLINK SECTION)</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="o5fOCnbeKE8">
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit># Link .htpasswd</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="eXNRgxOW57O">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>run &quot;ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/.htpasswd #{release_path}/#{app_root}/.htpasswd&quot;</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+            <item id="pN9Y54SrKC9">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>run &quot;ln -nfs #{deploy_to}/#{shared_dir}/#{domain}/.htaccess #{release_path}/#{app_root}/.htaccess&quot;</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="dY79RAxfKYH">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <lit>3) GIT COMMIT &amp; REDEPLOY</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+      </children>
+    </item>
+    <item id="mL4UoP1a7CC" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+        <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>• Error Documents</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="fVebr9qyC3r">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>See codebox for .htaccess error docs in apache</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="b1jDNb3OqOt" expanded="yes">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>basically in .htaccess for that stage folder</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="iylDPN7-7BY">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>ErrorDocument code /directory/filename.ext</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="aiIotSMmQwC">
+          <style>
+            <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+          </style>
+          <values>
+            <null/>
+          </values>
+        </item>
+      </children>
+    </item>
+  </root>
+</outline>
