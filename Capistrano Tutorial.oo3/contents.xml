@@ -8,21 +8,19 @@
     </style-attribute>
     <style-attribute version="0" key="font-fixed-pitch" group="font" name="fixed pitch" class="bool">no</style-attribute>
     <style-attribute version="0" key="font-italic" group="font" name="italic" class="bool">no</style-attribute>
-    <style-attribute version="0" key="font-size" group="font" name="size" class="number">12</style-attribute>
-    <style-attribute version="0" key="font-weight" group="font" name="weight" class="number">5</style-attribute>
-    <style-attribute version="0" key="item-handle-mode(com.omnigroup.OmniOutliner)" group="row" name="draw handles" class="enum">
-      <enum-name-table default-value="0">
-        <enum-name-table-element value="0" name="always"/>
-        <enum-name-table-element value="1" name="never"/>
-        <enum-name-table-element value="2" name="hover"/>
-      </enum-name-table>
+    <style-attribute version="0" key="font-size" group="font" name="size" class="number" integral="0" min="1" max="65536">12</style-attribute>
+    <style-attribute version="0" key="font-weight" group="font" name="weight" class="number" integral="1" min="1" max="14">5</style-attribute>
+    <style-attribute version="0" key="heading-suffix(com.omnigroup.OmniOutliner)" group="heading" name="suffix" class="string"></style-attribute>
+    <style-attribute version="0" key="heading-type(com.omnigroup.OmniOutliner)" group="heading" name="type" class="string">None</style-attribute>
+    <style-attribute version="0" key="item-gutter-color(com.omnigroup.OmniOutliner)" group="row" name="gutter color" class="color">
+      <color w="0" a="0"/>
     </style-attribute>
-    <style-attribute version="0" key="item-post-gap(com.omnigroup.OmniOutliner)" group="row" name="post gap" class="number">0</style-attribute>
+    <style-attribute version="0" key="item-post-gap(com.omnigroup.OmniOutliner)" group="row" name="post gap" class="number" integral="1" min="0" max="1000">0</style-attribute>
     <style-attribute version="0" key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)" group="row" name="above children padding" class="string">0</style-attribute>
-    <style-attribute version="0" key="item-pre-children-gap(com.omnigroup.OmniOutliner)" group="row" name="pre-children gap" class="number">0</style-attribute>
-    <style-attribute version="0" key="item-pre-gap(com.omnigroup.OmniOutliner)" group="row" name="pre gap" class="number">1</style-attribute>
+    <style-attribute version="0" key="item-pre-children-gap(com.omnigroup.OmniOutliner)" group="row" name="pre-children gap" class="number" integral="1" min="0" max="1000">4</style-attribute>
+    <style-attribute version="0" key="item-pre-gap(com.omnigroup.OmniOutliner)" group="row" name="pre gap" class="number" integral="1" min="0" max="1000">1</style-attribute>
     <style-attribute version="0" key="item-row-padding(com.omnigroup.OmniOutliner)" group="row" name="row padding" class="string">4</style-attribute>
-    <style-attribute version="0" key="item-to-note-space(com.omnigroup.OmniOutliner)" group="row" name="note gap" class="number">0</style-attribute>
+    <style-attribute version="0" key="item-to-note-space(com.omnigroup.OmniOutliner)" group="row" name="above note padding" class="number" integral="1" min="0" max="1000">0</style-attribute>
     <style-attribute version="0" key="paragraph-alignment" group="paragraph" name="alignment" class="enum">
       <enum-name-table default-value="4">
         <enum-name-table-element value="0" name="left"/>
@@ -33,11 +31,13 @@
       </enum-name-table>
     </style-attribute>
     <style-attribute version="0" key="paragraph-base-writing-direction" group="paragraph" name="writing direction" class="enum">
-      <enum-name-table default-value="0">
+      <enum-name-table default-value="-1">
+        <enum-name-table-element value="-1" name="natural"/>
         <enum-name-table-element value="0" name="left-to-right"/>
         <enum-name-table-element value="1" name="right-to-left"/>
       </enum-name-table>
     </style-attribute>
+    <style-attribute version="0" key="paragraph-line-height-multiple" group="paragraph" name="line height multiple" class="number" integral="0" min="0" max="1000">0</style-attribute>
     <style-attribute version="0" key="text-background-color" group="text" name="background color" class="color">
       <color w="0" a="0"/>
     </style-attribute>
@@ -78,14 +78,15 @@
     </named-style>
     <named-style id="mGYnjVNQpwD" name="CODE" display-order="4">
       <style>
-        <value key="font-family">Letter Gothic Std</value>
+        <value key="font-family">PragmataPro</value>
         <value key="font-fill">
           <color r="0" g="1" b="0"/>
         </value>
         <value key="font-fixed-pitch">yes</value>
-        <value key="font-size">20</value>
-        <value key="font-weight">6</value>
-        <value key="item-handle-mode(com.omnigroup.OmniOutliner)">hover</value>
+        <value key="font-size">18</value>
+        <value key="item-gutter-color(com.omnigroup.OmniOutliner)">
+          <color r="0" g="1" b="0" a="0.11"/>
+        </value>
         <value key="item-post-gap(com.omnigroup.OmniOutliner)">6</value>
         <value key="item-pre-gap(com.omnigroup.OmniOutliner)">6</value>
         <value key="item-row-padding(com.omnigroup.OmniOutliner)">6</value>
@@ -155,11 +156,26 @@
     <named-style id="laBWcNx2SF3" name="CODE" display-order="13">
       <style/>
     </named-style>
+    <named-style id="pbMtBls9iBg" name="Numbered Styles" display-order="14">
+      <style>
+        <value key="font-family">Avenir Next</value>
+        <value key="font-size">20</value>
+        <value key="heading-suffix(com.omnigroup.OmniOutliner)">)</value>
+        <value key="heading-type(com.omnigroup.OmniOutliner)">Numeric</value>
+        <value key="item-post-gap(com.omnigroup.OmniOutliner)">2</value>
+        <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">1</value>
+        <value key="item-pre-children-gap(com.omnigroup.OmniOutliner)">1</value>
+        <value key="item-pre-gap(com.omnigroup.OmniOutliner)">2</value>
+        <value key="item-row-padding(com.omnigroup.OmniOutliner)">2</value>
+        <value key="item-to-note-space(com.omnigroup.OmniOutliner)">1</value>
+        <value key="paragraph-base-writing-direction">left-to-right</value>
+      </style>
+    </named-style>
   </named-styles>
   <settings>
     <base-style>
       <style>
-        <value key="font-family">Avenir Next</value>
+        <value key="font-family">Century Gothic</value>
         <value key="font-fill">
           <color r="0.858779" g="0.982635" b="0.994374"/>
         </value>
@@ -170,6 +186,8 @@
         <value key="item-pre-gap(com.omnigroup.OmniOutliner)">2</value>
         <value key="item-row-padding(com.omnigroup.OmniOutliner)">2</value>
         <value key="item-to-note-space(com.omnigroup.OmniOutliner)">1</value>
+        <value key="paragraph-base-writing-direction">left-to-right</value>
+        <value key="paragraph-line-height-multiple">1.1</value>
         <value key="text-background-color">
           <color r="0.00991633" g="0.047667" b="0.0909953"/>
         </value>
@@ -196,17 +214,16 @@
     </print-info>
     <auto-generate-level-styles>no</auto-generate-level-styles>
   </settings>
-  <editor content-size="{1250, 852}" outline-title-display-mode="when-editing" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" inline-notes-span="full">
-    <drawer display="sections" palette-expanded="no" palette-height="501"/>
-    <hoisted-rows ids="nckXSFefptm"/>
+  <editor content-size="{1739, 992}" outline-title-display-mode="when-editing" column-titles-display-mode="auto" status-visible="no" hide-attachment-tags="yes" inline-notes-span="full">
+    <drawer display="sections" palette-height="499"/>
+    <note-split-view height="132"/>
+    <hoisted-rows ids="jQHa70cOB2_"/>
+    <selected-rows ids="c8LEwJ1SOpi"/>
+    <selected-columns ids="jFqHUGd_Dg1"/>
+    <selected-characters range="{76, 0}"/>
     <toolbar>{
     &quot;TB Default Item Identifiers&quot; =     (
-        ToggleSections,
-        SelectSection,
-        ActionButton,
-        AddColumn,
-        Attach,
-        ToggleRecording,
+        ToggleSidebar,
         NSToolbarFlexibleSpaceItem,
         ShowInfo
     );
@@ -215,8 +232,7 @@
     &quot;TB Is Shown&quot; = 1;
     &quot;TB Item Identifiers&quot; =     (
         NSToolbarFlexibleSpaceItem,
-        ToggleSections,
-        SelectSection,
+        ToggleSidebar,
         ActionButton,
         MoveUp,
         MoveDown,
@@ -229,11 +245,14 @@
         AddChild,
         AddAunt,
         AddColumn,
+        RemoveColumn,
+        NSToolbarSpaceItem,
+        Theme,
         NSToolbarShowFontsItem,
         NSToolbarShowColorsItem,
         Attach,
-        ToggleShowRowStates,
         ToggleRecording,
+        ScaleButton,
         NSToolbarFlexibleSpaceItem
     );
     &quot;TB Size Mode&quot; = 1;
@@ -244,7 +263,6 @@
       <p>
         <run>
           <style>
-            <value key="font-weight">9</value>
             <value key="paragraph-alignment">center</value>
           </style>
           <lit>CAPISTRANO DOCUMENTATION</lit>
@@ -265,7 +283,7 @@
         </text>
       </title>
     </column>
-    <column id="jFqHUGd_Dg1" type="text" width="1229" minimum-width="13" maximum-width="1000000" text-export-width="72" is-outline-column="yes">
+    <column id="jFqHUGd_Dg1" type="text" width="1718" minimum-width="13" maximum-width="1000000" text-export-width="72" is-outline-column="yes">
       <title>
         <text>
           <p>
@@ -278,34 +296,42 @@
     </column>
   </columns>
   <root>
-    <style>
-      <value key="paragraph-base-writing-direction">left-to-right</value>
-    </style>
+    <style/>
     <style>
       <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
       <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
       <value key="font-fill">
         <color r="0.8" g="0.4" b="1"/>
       </value>
-      <value key="paragraph-base-writing-direction">left-to-right</value>
     </style>
     <style>
       <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+      <value key="font-family">Avenir Next</value>
       <value key="font-fill">
-        <color r="0.270588" g="0.756863" b="0.917647"/>
+        <color r="0.4" g="1" b="1"/>
       </value>
       <value key="font-size">20</value>
-      <value key="paragraph-base-writing-direction">left-to-right</value>
-    </style>
-    <style>
-      <value key="paragraph-base-writing-direction">left-to-right</value>
-    </style>
-    <style>
-      <value key="font-fill">
-        <color r="0.55321" g="0.671863" b="0.686802"/>
+      <value key="text-background-color">
+        <color r="0.00991633" g="0.047667" b="0.0909953" a="0"/>
       </value>
-      <value key="font-italic">yes</value>
-      <value key="paragraph-base-writing-direction">left-to-right</value>
+    </style>
+    <style>
+      <value key="font-family">Avenir Next</value>
+      <value key="font-fill">
+        <color r="1" g="1" b="1"/>
+      </value>
+    </style>
+    <style>
+      <value key="font-family">Avenir Next</value>
+      <value key="font-fill">
+        <color r="1" g="0.435294" b="0.811765"/>
+      </value>
+    </style>
+    <style>
+      <value key="font-family">Avenir Next</value>
+      <value key="font-fill">
+        <color r="1" g="1" b="0"/>
+      </value>
     </style>
     <item id="m8QATIsxi33" expanded="yes">
       <style>
@@ -350,6 +376,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>ex) ~/sites/lustfulhealth-dev</lit>
                         </run>
                       </p>
@@ -361,6 +390,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>Once capistrano = in place, these files will be symlinked.</lit>
                         </run>
                       </p>
@@ -385,6 +417,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>ex) /home3/lustful1</lit>
                         </run>
                       </p>
@@ -396,6 +431,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>/home1/thelocia</lit>
                         </run>
                       </p>
@@ -441,7 +479,7 @@
         </item>
       </children>
     </item>
-    <item id="fVerLfRdR-g">
+    <item id="fVerLfRdR-g" expanded="yes">
       <values>
         <text>
           <p>
@@ -490,6 +528,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>ex) dev.lustfulhealth.com == ~/public_html/dev</lit>
                         </run>
                       </p>
@@ -622,13 +663,13 @@
               </values>
             </item>
             <item id="lh0RRQ7SA4q" expanded="yes">
-              <style>
-                <value key="font-weight">9</value>
-              </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>Config Folder</lit>
                     </run>
                   </p>
@@ -636,13 +677,14 @@
               </values>
               <children>
                 <item id="o6MFqpLCImD" expanded="yes">
-                  <style>
-                    <value key="font-weight">9</value>
-                  </style>
                   <values>
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                            <value key="font-weight">9</value>
+                          </style>
                           <lit>Deploy folder</lit>
                         </run>
                       </p>
@@ -685,14 +727,13 @@
                   </children>
                 </item>
                 <item id="czoAprUhF-3">
-                  <style>
-                    <value key="font-italic">no</value>
-                    <value key="font-weight">9</value>
-                  </style>
                   <values>
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-weight">9</value>
+                          </style>
                           <lit>deploy.rb</lit>
                         </run>
                       </p>
@@ -719,19 +760,16 @@
               </values>
             </item>
             <item id="lWHHt5n-L3D">
-              <style>
-                <value key="font-weight">9</value>
-              </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>Webroot Folder</lit>
                     </run>
                     <run>
-                      <style>
-                        <value key="font-weight">5</value>
-                      </style>
                       <lit> // Symbolically Linked Folder --all projects live in a folder called webroot</lit>
                     </run>
                   </p>
@@ -784,6 +822,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>ex) lustfulhealth, wordcamp, locialnetwork</lit>
                         </run>
                       </p>
@@ -838,7 +879,7 @@
             <text>
               <p>
                 <run>
-                  <lit>Note: to show removes do : </lit>
+                  <lit>Note: to show remotes do : </lit>
                 </run>
                 <run>
                   <style>
@@ -965,6 +1006,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>never put credentials in wp-config for security purposes</lit>
                         </run>
                       </p>
@@ -974,13 +1018,13 @@
               </children>
             </item>
             <item id="gcdSaMz9O2r" expanded="yes">
-              <style>
-                <value key="font-weight">9</value>
-              </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>Create local-config.php in wordpress folder</lit>
                     </run>
                   </p>
@@ -990,7 +1034,6 @@
                 <item id="cm4OiN7Wyih">
                   <style>
                     <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
-                    <value key="font-italic">no</value>
                   </style>
                   <values>
                     <text>
@@ -1005,7 +1048,6 @@
                 <item id="ljwV4ofvSrf">
                   <style>
                     <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
-                    <value key="font-italic">no</value>
                   </style>
                   <values>
                     <text>
@@ -1020,7 +1062,6 @@
                 <item id="k9jnhh31XqP">
                   <style>
                     <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
-                    <value key="font-italic">no</value>
                   </style>
                   <values>
                     <text>
@@ -1036,7 +1077,7 @@
             </item>
           </children>
         </item>
-        <item id="ohKklZdd_9b">
+        <item id="ohKklZdd_9b" expanded="yes">
           <values>
             <text>
               <p>
@@ -1284,7 +1325,7 @@
         </item>
       </children>
     </item>
-    <item id="ji5rty1BovL">
+    <item id="ji5rty1BovL" expanded="yes">
       <style>
         <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
         <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
@@ -1449,12 +1490,14 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>COMMIT</lit>
                 </run>
               </p>
@@ -1516,18 +1559,17 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>BRANCHING: </lit>
                 </run>
                 <run>
-                  <style>
-                    <value key="font-weight">5</value>
-                  </style>
                   <lit>Branches should match stages</lit>
                 </run>
               </p>
@@ -1537,12 +1579,14 @@
             <item id="lA5KUOvLbQv">
               <style>
                 <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
-                <value key="font-weight">9</value>
               </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>Development =&gt; dev   ----  Staging =&gt; staging</lit>
                     </run>
                   </p>
@@ -1552,12 +1596,14 @@
             <item id="h3JJy8cSlWt" expanded="yes">
               <style>
                 <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
-                <value key="font-weight">9</value>
               </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>Make new dev branch &amp; switch to it</lit>
                     </run>
                   </p>
@@ -1567,7 +1613,6 @@
                 <item id="lM1k5UayLVs">
                   <style>
                     <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
-                    <value key="font-italic">no</value>
                   </style>
                   <values>
                     <text>
@@ -1584,12 +1629,14 @@
             <item id="odRVnFXqJG-" expanded="yes">
               <style>
                 <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
-                <value key="font-weight">9</value>
               </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>Push dev branch up to Github</lit>
                     </run>
                   </p>
@@ -1599,7 +1646,6 @@
                 <item id="fv6Jbo5a-25">
                   <style>
                     <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
-                    <value key="font-italic">no</value>
                   </style>
                   <values>
                     <text>
@@ -1638,28 +1684,25 @@
               </values>
             </item>
             <item id="oNwYjcV29u-">
-              <style>
-                <value key="font-weight">9</value>
-              </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>develop</lit>
                     </run>
                     <run>
-                      <style>
-                        <value key="font-weight">5</value>
-                      </style>
                       <lit> in the </lit>
                     </run>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>development</lit>
                     </run>
                     <run>
-                      <style>
-                        <value key="font-weight">5</value>
-                      </style>
                       <lit> branch</lit>
                     </run>
                   </p>
@@ -1667,13 +1710,13 @@
               </values>
             </item>
             <item id="iDEphkSb9LO">
-              <style>
-                <value key="font-weight">9</value>
-              </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>then merge to staging or prod</lit>
                     </run>
                   </p>
@@ -1762,6 +1805,7 @@
         </item>
         <item id="nEY21zggzxe" expanded="yes">
           <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
             <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
           </style>
           <values>
@@ -1776,7 +1820,10 @@
           <children>
             <item id="dwzslM0240V">
               <style>
+                <value key="item-post-gap(com.omnigroup.OmniOutliner)">4</value>
                 <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">0</value>
+                <value key="item-pre-children-gap(com.omnigroup.OmniOutliner)">0</value>
+                <value key="item-pre-gap(com.omnigroup.OmniOutliner)">4</value>
                 <value key="item-row-padding(com.omnigroup.OmniOutliner)">4</value>
               </style>
               <values>
@@ -1969,11 +2016,15 @@
                       <p>
                         <run>
                           <style>
+                            <value key="font-italic">yes</value>
                             <value key="font-weight">9</value>
                           </style>
                           <lit>current</lit>
                         </run>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>       // always points to latest release of site</lit>
                         </run>
                       </p>
@@ -1981,18 +2032,19 @@
                   </values>
                 </item>
                 <item id="aXV4S5ZwYug">
-                  <style>
-                    <value key="font-weight">9</value>
-                  </style>
                   <values>
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                            <value key="font-weight">9</value>
+                          </style>
                           <lit>releases    </lit>
                         </run>
                         <run>
                           <style>
-                            <value key="font-weight">5</value>
+                            <value key="font-italic">yes</value>
                           </style>
                           <lit>// History of releases</lit>
                         </run>
@@ -2001,13 +2053,14 @@
                   </values>
                 </item>
                 <item id="p9nAdaLX10A" expanded="yes">
-                  <style>
-                    <value key="font-weight">9</value>
-                  </style>
                   <values>
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                            <value key="font-weight">9</value>
+                          </style>
                           <lit>shared</lit>
                         </run>
                       </p>
@@ -2015,13 +2068,13 @@
                   </values>
                   <children>
                     <item id="m5-nD1Y2Cju">
-                      <style>
-                        <value key="font-weight">9</value>
-                      </style>
                       <values>
                         <text>
                           <p>
                             <run>
+                              <style>
+                                <value key="font-weight">9</value>
+                              </style>
                               <lit>cached-copy</lit>
                             </run>
                           </p>
@@ -2029,13 +2082,13 @@
                       </values>
                     </item>
                     <item id="fm4WyIqSEzj" expanded="yes">
-                      <style>
-                        <value key="font-weight">9</value>
-                      </style>
                       <values>
                         <text>
                           <p>
                             <run>
+                              <style>
+                                <value key="font-weight">9</value>
+                              </style>
                               <lit>default</lit>
                             </run>
                           </p>
@@ -2043,15 +2096,13 @@
                       </values>
                       <children>
                         <item id="oTE-ANEkX0Z">
-                          <style>
-                            <value key="font-weight">9</value>
-                          </style>
                           <values>
                             <text>
                               <p>
                                 <run>
                                   <style>
                                     <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+                                    <value key="font-weight">9</value>
                                   </style>
                                   <lit>WHERE LOCAL-CONFIG.php exists for SERVER VERSION</lit>
                                 </run>
@@ -2140,7 +2191,7 @@
                 <text>
                   <p>
                     <run>
-                      <lit>sftp://lustfulhealth.com//home3/lustful1/sites/lustfulhealth-staging/shared/default/local-config.php</lit>
+                      <lit><cell href="sftp://lustfulhealth.com//home3/lustful1/sites/lustfulhealth-staging/shared/default/local-config.php" name="sftp://lustfulhealth.com//home3/lustful1/sites/lustfulhealth-staging/shared/default/local-config.php" type="link"/></lit>
                     </run>
                   </p>
                 </text>
@@ -2188,12 +2239,14 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>Get sql dump from local version</lit>
                 </run>
               </p>
@@ -2201,13 +2254,13 @@
           </values>
           <children>
             <item id="dmTY0ALF6DY">
-              <style>
-                <value key="font-weight">9</value>
-              </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>sequel / phpMyAdmin / Navicat / WP Migrate Pro Plugin</lit>
                     </run>
                   </p>
@@ -2222,12 +2275,14 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>DO SEARCH &amp; REPLACE FOR URLS &amp; PATH</lit>
                 </run>
               </p>
@@ -2240,12 +2295,14 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>Import to Server DB --&gt; phpMyAdmin</lit>
                 </run>
               </p>
@@ -2330,12 +2387,14 @@
           <style>
             <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
             <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>ON SERVER SIDE:</lit>
                 </run>
               </p>
@@ -2351,7 +2410,7 @@
             <text>
               <p>
                 <run>
-                  <lit>cd ~/sites/current/wordpress &amp;&amp; pwd</lit>
+                  <lit>cd ~/sites/#{application}-#{stage}/current/wordpress &amp;&amp; pwd</lit>
                 </run>
               </p>
             </text>
@@ -2363,18 +2422,17 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>copy path</lit>
                 </run>
                 <run>
-                  <style>
-                    <value key="font-weight">5</value>
-                  </style>
                   <lit> and go back to public_html</lit>
                 </run>
               </p>
@@ -2415,12 +2473,14 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>DELETE Orginal SUBDomain in ~/public_html</lit>
                 </run>
               </p>
@@ -2446,6 +2506,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>ex) rm -rf wordcamp.karveldigital.com/</lit>
                         </run>
                       </p>
@@ -2462,12 +2525,14 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>Symlink subdomain to sites/project folder</lit>
                 </run>
               </p>
@@ -2510,12 +2575,14 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>ll to show that it&apos;s symlinked</lit>
                 </run>
               </p>
@@ -2528,7 +2595,6 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <null/>
@@ -2540,12 +2606,14 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>SITE SHOULD BE LIVE AND WORKING AT THIS POINT</lit>
                 </run>
               </p>
@@ -2589,13 +2657,6 @@
               </p>
             </text>
           </values>
-          <children>
-            <item id="oo-6TqyJgHf">
-              <values>
-                <null/>
-              </values>
-            </item>
-          </children>
         </item>
         <item id="hQjXUM_z0V0">
           <values>
@@ -2607,15 +2668,8 @@
               </p>
             </text>
           </values>
-          <children>
-            <item id="hafT-apHBnu">
-              <values>
-                <null/>
-              </values>
-            </item>
-          </children>
         </item>
-        <item id="b2joW13xMcH">
+        <item id="b2joW13xMcH" expanded="yes">
           <style>
             <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
             <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
@@ -2665,6 +2719,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>LOCAL: check in ~/Sites/wordcamp/db to see if it worked, default_dev.sql should exist</lit>
                         </run>
                       </p>
@@ -2700,13 +2757,12 @@
                       <lit>sed -e &apos;s/dev.lustfulhealth.com/staging.lustfulhealth.dev/g&apos; -i .bak default_dev.sql</lit>
                     </run>
                   </p>
-                  <p/>
                 </text>
               </values>
             </item>
           </children>
         </item>
-        <item id="ngyYgId9Oac">
+        <item id="ngyYgId9Oac" expanded="yes">
           <style>
             <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
             <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
@@ -2748,106 +2804,50 @@
               </p>
             </text>
           </values>
+        </item>
+        <item id="a6B4T1aQnYl">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>2 options: db:down or db:pull</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="mB4cl8dgm8l" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <lit>db:down:</lit>
+                </run>
+                <run>
+                  <lit> pulls down backup and places it in db folder</lit>
+                </run>
+              </p>
+            </text>
+          </values>
           <children>
-            <item id="a6B4T1aQnYl">
-              <values>
-                <text>
-                  <p>
-                    <run>
-                      <lit>2 options: db:down or db:pull</lit>
-                    </run>
-                  </p>
-                </text>
-              </values>
-            </item>
-            <item id="mB4cl8dgm8l" expanded="yes">
+            <item id="ezi9IWfKdMv">
               <style>
-                <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
-                <value key="font-fill">
-                  <color r="0.270588" g="0.756863" b="0.917647"/>
-                </value>
-                <value key="font-size">20</value>
-                <value key="font-weight">9</value>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
               </style>
               <values>
                 <text>
                   <p>
                     <run>
-                      <lit>db:down:</lit>
-                    </run>
-                    <run>
-                      <style>
-                        <value key="font-weight">5</value>
-                      </style>
-                      <lit> pulls down backup and places it in db folder</lit>
-                    </run>
-                  </p>
-                </text>
-              </values>
-              <children>
-                <item id="ezi9IWfKdMv">
-                  <style>
-                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
-                  </style>
-                  <values>
-                    <text>
-                      <p>
-                        <run>
-                          <lit>cap dev db:down</lit>
-                        </run>
-                      </p>
-                    </text>
-                  </values>
-                </item>
-              </children>
-            </item>
-            <item id="iytPfWlln8k" expanded="yes">
-              <style>
-                <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
-                <value key="font-fill">
-                  <color r="0.270588" g="0.756863" b="0.917647"/>
-                </value>
-                <value key="font-size">20</value>
-                <value key="font-weight">9</value>
-              </style>
-              <values>
-                <text>
-                  <p>
-                    <run>
-                      <lit>db:pull:</lit>
-                    </run>
-                    <run>
-                      <style>
-                        <value key="font-weight">5</value>
-                      </style>
-                      <lit> pulls down db and replaces local copy with what you pulled      /// I EDITED THIS ONE</lit>
-                    </run>
-                  </p>
-                </text>
-              </values>
-              <children>
-                <item id="bTrWhJv-qJJ">
-                  <style>
-                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
-                  </style>
-                  <values>
-                    <text>
-                      <p>
-                        <run>
-                          <lit>cap dev db:pull</lit>
-                        </run>
-                      </p>
-                    </text>
-                  </values>
-                </item>
-              </children>
-            </item>
-            <item id="pJX16P7jipy">
-              <values>
-                <text>
-                  <p>
-                    <run>
-                      <lit>both do search and replaces</lit>
+                      <lit>cap dev db:down</lit>
                     </run>
                   </p>
                 </text>
@@ -2855,14 +2855,64 @@
             </item>
           </children>
         </item>
+        <item id="iytPfWlln8k" expanded="yes">
+          <style>
+            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+            <value key="font-fill">
+              <color r="0.270588" g="0.756863" b="0.917647"/>
+            </value>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
+                  <lit>db:pull:</lit>
+                </run>
+                <run>
+                  <lit> pulls down db and replaces local copy with what you pulled      /// I EDITED THIS ONE</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="bTrWhJv-qJJ">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit>cap dev db:pull</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="pJX16P7jipy">
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>both do search and replaces</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
       </children>
     </item>
-    <item id="lUhWFzs_dka">
+    <item id="lUhWFzs_dka" expanded="yes">
       <style>
         <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
         <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
-        <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
         <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
+        <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
       </style>
       <values>
         <text>
@@ -2888,7 +2938,6 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
             <value key="item-post-gap(com.omnigroup.OmniOutliner)">4</value>
             <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">0</value>
             <value key="item-pre-children-gap(com.omnigroup.OmniOutliner)">0</value>
@@ -2899,6 +2948,9 @@
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>1) Deploy</lit>
                 </run>
               </p>
@@ -2935,7 +2987,6 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
             <value key="item-post-gap(com.omnigroup.OmniOutliner)">4</value>
             <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">0</value>
             <value key="item-pre-children-gap(com.omnigroup.OmniOutliner)">0</value>
@@ -2946,12 +2997,14 @@
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>2) DB: </lit>
                 </run>
                 <run>
                   <style>
                     <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
-                    <value key="font-weight">5</value>
                   </style>
                   <lit>wped &amp; wpes -- db:push</lit>
                 </run>
@@ -2970,7 +3023,7 @@
                 </text>
               </values>
             </item>
-            <item id="d_d-NiTvNp1">
+            <item id="d_d-NiTvNp1" expanded="yes">
               <style>
                 <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
               </style>
@@ -2995,9 +3048,8 @@
               <children>
                 <item id="kWu9V0blCG6">
                   <style>
-                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
                     <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
-                    <value key="font-italic">no</value>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
                   </style>
                   <values>
                     <text>
@@ -3011,11 +3063,9 @@
                 </item>
                 <item id="mZqksQLCHRN">
                   <style>
-                    <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
-                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
                     <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
-                    <value key="font-italic">no</value>
-                    <value key="font-weight">9</value>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                    <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
                   </style>
                   <values>
                     <text>
@@ -3051,12 +3101,14 @@
             <value key="font-fill">
               <color r="0.270588" g="0.756863" b="0.917647"/>
             </value>
-            <value key="font-weight">9</value>
           </style>
           <values>
             <text>
               <p>
                 <run>
+                  <style>
+                    <value key="font-weight">9</value>
+                  </style>
                   <lit>3) Files</lit>
                 </run>
               </p>
@@ -3078,6 +3130,232 @@
               </values>
             </item>
           </children>
+        </item>
+      </children>
+    </item>
+    <item id="jQHa70cOB2_" expanded="yes">
+      <style>
+        <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
+        <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
+        <inherited-style name="Emphasis" idref="pEuyXj84FqX"/>
+      </style>
+      <values>
+        <text>
+          <p>
+            <run>
+              <lit>Push to Production</lit>
+            </run>
+          </p>
+        </text>
+      </values>
+      <children>
+        <item id="d2hkCV5tRKS">
+          <style>
+            <inherited-style name="Numbered Styles" idref="pbMtBls9iBg"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Fill out: </lit>
+                </run>
+                <run>
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                  </style>
+                  <lit>config/deploy/prod.rb</lit>
+                </run>
+                <run>
+                  <lit> with same values as dev except branch should be prod</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="b-qmetvIE_l">
+          <style>
+            <inherited-style name="Numbered Styles" idref="pbMtBls9iBg"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>SERVER-SIDE: On BlueHost, make new production worpress DB</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="fNb-Ol0ngDI">
+          <style>
+            <inherited-style name="Numbered Styles" idref="pbMtBls9iBg"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Commit Everything + Make sure working copy is clean</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="lkZqLUACgU6">
+          <style>
+            <inherited-style name="Numbered Styles" idref="pbMtBls9iBg"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Create production branch locally (or on bitbucket.org) &amp; switch to it.</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="eSBnvL5elYV">
+          <style>
+            <inherited-style name="Numbered Styles" idref="pbMtBls9iBg"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Merge latest dev/staging branch to prod branch</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="hVIAvCaQOzu">
+          <style>
+            <inherited-style name="Numbered Styles" idref="pbMtBls9iBg"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Follow steps from STEP 9: Deploy Check to make first push to DB</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="bHJ6M4s_Ic0" expanded="yes">
+          <style>
+            <inherited-style name="Numbered Styles" idref="pbMtBls9iBg"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                  </style>
+                  <lit>.htaccess </lit>
+                </run>
+                <run>
+                  <lit>| Make Sure .htaccess file is in ~/public_html with the following values </lit>
+                </run>
+              </p>
+            </text>
+          </values>
+          <children>
+            <item id="cMxZi4bz5Gj">
+              <style>
+                <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+              </style>
+              <values>
+                <text>
+                  <p>
+                    <run>
+                      <lit># BEGIN WordPress</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>&lt;IfModule mod_rewrite.c&gt;</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>RewriteEngine On</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>RewriteBase /</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>RewriteRule ^index\.php$ - [L]</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>RewriteCond %{REQUEST_FILENAME} !-f</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>RewriteCond %{REQUEST_FILENAME} !-d</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>RewriteRule . /index.php [L]</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit>&lt;/IfModule&gt;</lit>
+                    </run>
+                  </p>
+                  <p>
+                    <run>
+                      <lit># END WordPress</lit>
+                    </run>
+                  </p>
+                </text>
+              </values>
+            </item>
+          </children>
+        </item>
+        <item id="dqGG6GpfNPs">
+          <style>
+            <inherited-style name="Numbered Styles" idref="pbMtBls9iBg"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>Note: for subfolder use, change the rewrite rule to : </lit>
+                </run>
+                <run>
+                  <style>
+                    <inherited-style name="CODE" idref="mGYnjVNQpwD"/>
+                  </style>
+                  <lit>. /{subfolder_name}/index.php [L]</lit>
+                </run>
+              </p>
+            </text>
+          </values>
+        </item>
+        <item id="c8LEwJ1SOpi">
+          <style>
+            <inherited-style name="Numbered Styles" idref="pbMtBls9iBg"/>
+          </style>
+          <values>
+            <text>
+              <p>
+                <run>
+                  <lit>When up &amp; running -&gt; Settings -&gt; Permalinks &amp; resave just for good practice.</lit>
+                </run>
+              </p>
+            </text>
+          </values>
         </item>
       </children>
     </item>
@@ -3149,6 +3427,7 @@
             <item id="mdwmX4aArEc">
               <style>
                 <value key="item-pre-children-adjustment(com.omnigroup.OmniOutliner)">0</value>
+                <value key="item-pre-children-gap(com.omnigroup.OmniOutliner)">0</value>
               </style>
               <values>
                 <text>
@@ -3320,16 +3599,11 @@
                 </text>
               </values>
             </item>
-            <item id="mbJ-hceqP67">
-              <values>
-                <null/>
-              </values>
-            </item>
           </children>
         </item>
       </children>
     </item>
-    <item id="lt21GFlq6X6">
+    <item id="lt21GFlq6X6" expanded="yes">
       <style>
         <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
         <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
@@ -3371,13 +3645,13 @@
               </values>
             </item>
             <item id="cZxRK60pTPY" expanded="yes">
-              <style>
-                <value key="font-weight">9</value>
-              </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>.htaccess in ~/sites/#{project-name}-dev/shared/.htaccess</lit>
                     </run>
                   </p>
@@ -3389,26 +3663,41 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit># Password Protect</lit>
                         </run>
                       </p>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>	AuthType Basic</lit>
                         </run>
                       </p>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>	AuthName &quot;Development Area: Locial Network Only&quot;</lit>
                         </run>
                       </p>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>	AuthUserFile /home3/lustful1/sites/lustfulhealth-dev/shared/default/.htpasswd</lit>
                         </run>
                       </p>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>	require valid-user</lit>
                         </run>
                       </p>
@@ -3418,13 +3707,13 @@
               </children>
             </item>
             <item id="kssX6xTUHC2" expanded="yes">
-              <style>
-                <value key="font-weight">9</value>
-              </style>
               <values>
                 <text>
                   <p>
                     <run>
+                      <style>
+                        <value key="font-weight">9</value>
+                      </style>
                       <lit>.htpasswd ~/sites/#{project-name}-dev/shared/default/.htpasswd</lit>
                     </run>
                   </p>
@@ -3436,12 +3725,21 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>username:&lt;encrypted key from </lit>
                         </run>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit><cell href="http://davidwalsh.name/web-development-tools" name="http://davidwalsh.name/web-development-tools" type="link"/></lit>
                         </run>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>&gt;</lit>
                         </run>
                       </p>
@@ -3453,6 +3751,9 @@
                     <text>
                       <p>
                         <run>
+                          <style>
+                            <value key="font-italic">yes</value>
+                          </style>
                           <lit>lorelle:F09kytLPCipCE</lit>
                         </run>
                       </p>
@@ -3587,16 +3888,6 @@
               </values>
             </item>
           </children>
-        </item>
-        <item id="aiIotSMmQwC">
-          <style>
-            <inherited-style name="Heading 1" idref="n_Pe4j-wTmH"/>
-            <inherited-style name="Heading 2" idref="jBtVNldF-aM"/>
-            <inherited-style name="Magenta" idref="aeYpF7M08yK"/>
-          </style>
-          <values>
-            <null/>
-          </values>
         </item>
       </children>
     </item>

@@ -1,7 +1,7 @@
 Locial Network's update version of this amazing WP-Capistrano Tool.
 Changes are specific to LocialNetwork's individual development.
 
-This is a vanilla WordPress 3.8.1 install, set up for easy deployment using Capistrano, git, wp-cli and sed.
+This is a vanilla WordPress 4.1 install, set up for easy deployment using Capistrano, git, wp-cli and sed.
 
 For more instruction, check out http://vimeo.com/72087167
 For more instruction, check out http://www.metaltoad.com/blog/tutorial-simplify-your-wordpress-deployments
