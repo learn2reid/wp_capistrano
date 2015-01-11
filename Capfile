@@ -1,5 +1,6 @@
 # TODO: Cap db:push should support rollback or backup in some way
 # TODO: Better handling of database creation - perhaps make the deploy user a database admin?
+# TODO: Better DB handling -> set variable of domain name and replace all youdomain.com instances
 
 load 'deploy' if respond_to?(:namespace) # cap2 differentiator
 Dir['vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }
@@ -33,21 +34,21 @@ namespace :deploy do
   desc "Create local local_config.php in shared/config"
   task :create_settings_php, :roles => :web do
     domains.each do |domain|
-        configuration = <<-EOF
-<?php
+      configuration = <<-EOF
+      <?php
 
-  define('DB_NAME', '#{short_name(domain)}');
+      define('DB_NAME', '#{short_name(domain)}');
 
-  /** MySQL database username */
-  define('DB_USER', '#{tiny_name(domain)}');
+      /** MySQL database username */
+      define('DB_USER', '#{tiny_name(domain)}');
 
-  /** MySQL database password */
-  define('DB_PASSWORD', '#{db_pass}');
+      /** MySQL database password */
+      define('DB_PASSWORD', '#{db_pass}');
 
-  /** MySQL hostname */
-  define('DB_HOST', 'localhost');
+      /** MySQL hostname */
+      define('DB_HOST', 'localhost');
 
-EOF
+      EOF
 
       put configuration, "#{deploy_to}/#{shared_dir}/#{domain}/local-config.php"
     end
@@ -118,14 +119,13 @@ namespace :db do
       run "touch #{temp} && chmod 600 #{temp}"
       run_locally "mkdir -p db"
       # For my server I have to source my bash_profile to get the wp command to work. On other hosts, this might not be necessary, so you can uncomment the line below and commemt out or delete the second version. Otherwise just keep the original line and edit the /path-to/.bash_profile
-      #FIXME
-      # run cd #{deploy_to}/current/webroot && #{wp} db export #{temp} && cd -"
-      run "source /path-to/.bash_profile && cd #{deploy_to}/current/webroot && #{wp} db export #{temp} && cd -"
-      download("#{temp}", "db/#{filename}", :via=> :scp)
+      # run "source /path-to/.bash_profile && cd #{deploy_to}/current/webroot && #{wp} db export #{temp} && cd -"
+      # download("#{temp}", "db/#{filename}", :via=> :scp)
+      run "cd #{deploy_to}/current/webroot && #{wp} db export #{temp} && cd -" #FIXME
       if "#{stage}" == "prod"
         search = "yourdomain.com" #FIXME
       else
-        search = "#{application}-#{stage}.yourdomain.com" #FIXME
+        search = "#{stage}.yourdomain.com" #FIXME
       end
       replace = local_domain
       puts "searching (#{search}) and replacing (#{replace}) domain information"
@@ -138,7 +138,7 @@ namespace :db do
   task :pull, :roles => :db, :only => { :primary => true } do
     domains.each do |domain|
       filename = "#{domain}_#{stage}.sql"
-      system "cd #{app_root} ; #{wp} db import #{filename}"
+      run_locally "cd #{local_path}/webroot ; wp db import ../db/#{filename}"
     end
   end
 
@@ -151,7 +151,7 @@ namespace :db do
       if "#{stage}" == "prod"
         replace = "yourdomain.com" #FIXME
       else
-        replace = "#{application}-#{stage}.yourdomain.com" #FIXME
+        replace = "#{stage}.yourdomain.com" #FIXME
       end
       search = local_domain
       puts "searching (#{search}) and replacing (#{replace}) domain information"
@@ -182,9 +182,9 @@ namespace :files do
   task :pull, :roles => :web do
     domains.each do |domain|
       if exists?(:gateway)
-        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh='ssh #{ssh_options[:user]}@#{gateway} ssh  #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}' --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' :#{deploy_to}/#{shared_dir}/#{domain}/files/ webroot/wp-content/")
+        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh='ssh #{ssh_options[:user]}@#{gateway} ssh  #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}' --compress --human-readable --progress --exclude 'wordpress/plugins' --exclude 'wordpress/themes' :#{deploy_to}/#{shared_dir}/#{domain}/files/uploads/ wordpress/wp-content/uploads/")
       else
-        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh=ssh --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}:#{deploy_to}/#{shared_dir}/#{domain}/files/ webroot/wp-content/")
+        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh=ssh --compress --human-readable --progress --exclude 'wordpress/plugins' --exclude 'wordpress/themes' #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}:#{deploy_to}/#{shared_dir}/#{domain}/files/uploads/ wordpress/wp-content/uploads/")
       end
     end
   end
