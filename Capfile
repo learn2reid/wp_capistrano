@@ -118,14 +118,13 @@ namespace :db do
       temp = "/tmp/#{release_name}_#{application}_#{filename}"
       run "touch #{temp} && chmod 600 #{temp}"
       run_locally "mkdir -p db"
-      # For my server I have to source my bash_profile to get the wp command to work. On other hosts, this might not be necessary, so you can uncomment the line below and commemt out or delete the second version. Otherwise just keep the original line and edit the /path-to/.bash_profile
-      # run "source /path-to/.bash_profile && cd #{deploy_to}/current/webroot && #{wp} db export #{temp} && cd -"
-      # download("#{temp}", "db/#{filename}", :via=> :scp)
-      run "cd #{deploy_to}/current/webroot && #{wp} db export #{temp} && cd -" #FIXME
+      run "cd #{deploy_to}/current/webroot && #{wp} db export #{temp} && cd -"
       if "#{stage}" == "prod"
-        search = "yourdomain.com" #FIXME
+        search = "#{default_url}"
+        # search = "yourdomain.com"
       else
-        search = "#{stage}.yourdomain.com" #FIXME
+        search = "#{stage}.#{default_url}"
+        # search = "#{stage}.yourdomain.com"
       end
       replace = local_domain
       puts "searching (#{search}) and replacing (#{replace}) domain information"
@@ -149,9 +148,9 @@ namespace :db do
       temp = "/tmp/#{release_name}_#{application}_#{filename}"
       run "touch #{temp} && chmod 600 #{temp}"
       if "#{stage}" == "prod"
-        replace = "yourdomain.com" #FIXME
+        replace = "#{default_url}"
       else
-        replace = "#{stage}.yourdomain.com" #FIXME
+        replace = "#{stage}.#{default_url}"
       end
       search = local_domain
       puts "searching (#{search}) and replacing (#{replace}) domain information"
@@ -198,6 +197,16 @@ namespace :files do
         run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh=ssh --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' webroot/wp-content/ #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}:#{deploy_to}/#{shared_dir}/#{domain}/files/")
       end
     end
+  end
+end
+
+namespace :z_lotest do
+  desc "Lorelle's Testing Purposes."
+  task :printVariables, :roles => :web do
+    puts "Default URL is: " + default_url
+    puts "Dev URL is: " + dev_url
+    puts "Web Config: #{find_servers(:roles => :web)}"
+    puts "DB Config : #{find_servers(:roles => :db)}"
   end
 end
 

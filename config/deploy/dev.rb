@@ -5,11 +5,13 @@ set :deploy_to, "/home/username/sites/#{application}-#{stage}" #FIXME Ex) /home2
 set :branch, "dev" #FIXME
 
 # The hostnames to deploy to.
-role :web, "yourdomain.com" #FIXME Ex) thegiftedprogramnyc.com
+# role :web, "yourdomain.com" #Ex) thegiftedprogramnyc.com
+role :web, default_url
 
 # Specify one of the web servers to use for database backups or updates.
 # This server should also be running Wordpress.
-role :db, "yourdomain.com", :primary => true #FIXME Ex) thegiftedprogramnyc.com
+# role :db, "yourdomain.com", :primary => true #Ex) thegiftedprogramnyc.com
+role :db, default_url, :primary => true
 
 # The path to wp-cli
 set :wp, "cd #{current_path}/#{app_root} ; /usr/bin/wp" #FIXME (Should be the full path to the wp command on your server)

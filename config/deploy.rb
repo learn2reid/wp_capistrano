@@ -6,10 +6,8 @@ set :domains, ["default"]
 
 # Set the repository type and location to deploy from.
 set :scm, :git
-set :repository,  "git@github.com:kronda/wp_capistrano.git" #FIXME Ex) git@bitbucket.org:Learn2reid/tgp.git
-# set :scm, :subversion
-# set :repository,  "https://svn.example.com/svn/#{application}/trunk/"
-# set(:scm_password) { Capistrano::CLI.password_prompt("SCM Password: ") }
+set :repository, "git@github.com:kronda/wp_capistrano.git" #FIXME
+#Ex) git@bitbucket.org:Learn2reid/tgp.git
 
 # Set the database passwords that we'll use for maintenance. Probably only used
 # during setup.
@@ -22,7 +20,7 @@ set :local_path, "/Path/to/your/local-folder" #FIXME ex) /Users/lorellereid/Site
 
 # Use a remote cache to speed things up
 set :deploy_via, :remote_cache
-ssh_options[:user] = 'username' #FIXME Ex) thegifx1 or lustful1
+ssh_options[:user] = 'username' #FIXME Ex) thegifx1
 
 # Multistage support - see config/deploy/[STAGE].rb for specific configs
 set :default_stage, "dev"
@@ -42,3 +40,8 @@ set :local_domain, 'localhost.com' #FIXME Ex) tgp.dev or dev.lustfulhealth.dev
 
 # Set how many releases to keep
 set :keep_releases, 3
+
+# Set Default/Prod, Dev, Staging URLs IMPORTANT!
+set :default_url, 'domain.com' #FIXME Ex) thegiftedprogramnyc.com
+set :dev_url, 'dev.domain.com' #FIXME Ex) dev.thegiftedprogramnyc.com
+set :staging_url, 'staging.domain.com' #FIXME Ex) staging.thegiftedprogramnyc.com
