@@ -2,12 +2,8 @@
 *.sublime*
 *~
 .buildpath
-.buildpath
-.DS_Store
 .DS_Store
 .project
-.project
-.settings
 .settings
 /.gitattributes
 backups/

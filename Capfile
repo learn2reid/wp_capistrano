@@ -133,11 +133,35 @@ namespace :db do
     end
   end
 
-  desc "Download and apply a backup of the database(s) from the given stage."
+  desc "Download and apply a backup of the database(s) from the given stage LORELLE Gonna handle this."
   task :pull, :roles => :db, :only => { :primary => true } do
     domains.each do |domain|
       filename = "#{domain}_#{stage}.sql"
-      run_locally "cd #{local_path}/webroot ; wp db import ../db/#{filename}"
+      temp = "/tmp/#{release_name}_#{application}_#{filename}"
+      run "touch #{temp} && chmod 600 #{temp}"
+      run_locally "mkdir -p db"
+      run "source ~/.bash_profile && cd #{deploy_to}/current/webroot && #{wp} db export #{temp} && cd -"
+      download("#{temp}", "db/#{filename}", :via=> :scp)
+      if "#{stage}" == "prod"
+        search = "thegiftedprogramnyc.com"
+      else
+        search = "#{stage}.thegiftedprogramnyc.com"
+      end
+      replace = local_domain
+      puts "searching (#{search}) and replacing (#{replace}) domain information"
+      run_locally "sed -e 's/#{search}/#{replace}/g' -i .bak db/#{filename}"
+      run "rm #{temp}"
+
+      local_filename = "#{domain}_#{stage}.sql"
+      system "cd db && cp #{local_filename} ../#{app_root}; cd ../#{app_root} && wp db import #{local_filename}; rm #{local_filename}"
+    end
+  end
+
+  desc "Download and apply a backup of the database(s) from the given stage."
+  task :pullx, :roles => :db, :only => { :primary => true } do
+    domains.each do |domain|
+      filename = "#{domain}_#{stage}.sql"
+      system "cd #{app_root} ; #{wp} db import #{filename}"
     end
   end
 
@@ -181,9 +205,9 @@ namespace :files do
   task :pull, :roles => :web do
     domains.each do |domain|
       if exists?(:gateway)
-        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh='ssh #{ssh_options[:user]}@#{gateway} ssh  #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}' --compress --human-readable --progress --exclude 'wordpress/plugins' --exclude 'wordpress/themes' :#{deploy_to}/#{shared_dir}/#{domain}/files/uploads/ wordpress/wp-content/uploads/")
+        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh='ssh #{ssh_options[:user]}@#{gateway} ssh  #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}' --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' :#{deploy_to}/#{shared_dir}/#{domain}/files/ webroot/wp-content/")
       else
-        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh=ssh --compress --human-readable --progress --exclude 'wordpress/plugins' --exclude 'wordpress/themes' #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}:#{deploy_to}/#{shared_dir}/#{domain}/files/uploads/ wordpress/wp-content/uploads/")
+        run_locally("rsync --recursive --times --omit-dir-times --chmod=ugo=rwX --rsh=ssh --compress --human-readable --progress --exclude 'webroot/plugins' --exclude 'webroot/themes' #{ssh_options[:user]}@#{find_servers(:roles => :web).first.host}:#{deploy_to}/#{shared_dir}/#{domain}/files/ webroot/wp-content/")
       end
     end
   end

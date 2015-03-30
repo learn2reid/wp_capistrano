@@ -9,7 +9,7 @@
 
 // Define Environments - may be a string or array of options for an environment
 $environments = array(
-	'development' => 'dev.',
+	'development' => '.dev',
 	'staging'     => 'staging.',
 );
 
@@ -47,8 +47,8 @@ switch ( ENVIRONMENT ) {
 
 case 'development':
 	define( 'DB_NAME', '' );
-	define( 'DB_USER', '' );
-	define( 'DB_PASSWORD', '' );
+	define( 'DB_USER', 'root' );
+	define( 'DB_PASSWORD', 'root' );
 	define( 'DB_HOST', 'localhost' );
 
 	break;
